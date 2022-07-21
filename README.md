@@ -34,7 +34,7 @@ Take a look at a few other projects that I have in my own portfolio:
 
 **Edie Agency:** https://github.com/daniel-ezekiel/edie-agency-website
 
-**SPC APOD:** https://github.com/daniel-ezekiel/spc-apod
+**SPC APOD:** https://github.com/Daniel-Ezekiel/sc-apod
 
 **The Creative Crew:** https://github.com/daniel-ezekiel/team-page-challenge
 
