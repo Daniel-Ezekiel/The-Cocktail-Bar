@@ -1,0 +1,201 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+    box-sizing: border-box;
+  }
+  
+/******************************************
+/* LAYOUT
+/*******************************************/
+html{
+    font-size: 62.5%
+}
+
+body{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    /* padding: 1.2rem; */
+
+    background: url(../img/drinks-bg.webp) 50% 50% no-repeat;
+    background-size: cover;
+
+    text-align: center;
+    line-height: 1.5;
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-size: 1.5rem;
+}
+
+body::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.35);
+    z-index: -1;
+}
+
+header, 
+main{
+    color: #fff;
+}
+
+header{
+    padding: 2rem;
+    padding-top: 3.5rem;
+}
+
+header h1{
+    margin: 5px 0;
+    padding: 0 2.2rem;
+
+    line-height: 1.2;
+    font-size: 3.5rem;
+}
+
+h1,
+h2{
+    line-height: 1.2;
+    font-family: 'Tangerine', cursive;
+}
+
+form{
+    margin-top: 1.5rem;
+}
+
+form label{
+    display: block;
+    padding: 0.5rem 0;
+}
+
+input,
+button{
+    border: none;
+    border-radius: 1.15rem;
+    padding: 1.25rem 1.5rem;
+}
+
+main{
+    margin-top: 5.5rem;
+    padding-bottom: 5.5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* .swiper-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.swiper-slide{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 35rem;
+    min-height: 50rem;
+
+    
+    background-position: center;
+    background-size: cover;
+
+    margin: 10px;
+    padding: 2.5rem;
+    background-color: rgb(240, 248, 255);
+    border-radius: 2.5rem;
+
+    color: rgb(0, 0, 0)
+}
+
+.swiper-slide-active{
+    filter:blur(0);
+    background:white;
+}
+
+span{
+    display: block;
+}
+
+.title{
+    display: inline;
+
+    font-style: italic;
+    font-weight: 600;
+}
+
+h2{
+    font-size: 3.5rem;
+}
+
+.cocktail-img{
+    display: block;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+}
+
+h3{
+    font-size: 1.6rem;
+    margin: 5px;
+}
+
+p.prev-message{
+    text-align: center;
+}
+
+img + p,
+h3 + p{
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    max-height: 125px;
+    overflow-y: scroll;
+
+    text-align: justify;
+}
+
+img + p::-webkit-scrollbar,
+h3 + p::-webkit-scrollbar{
+    display:none;
+}
+
+div.swiper-pagination{
+    position: static;
+    margin-top: 1.5rem;
+    color:rgb(240, 248, 255);
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+@media screen and (min-width: 768px){
+    header h1, h2{
+        font-size: 5rem;
+    }
+
+    form label,
+    form input,
+    form button{
+        font-size: 1.7rem;
+    }
+
+    h3,
+    p{
+        font-size: 1.7rem;
+    }
+}

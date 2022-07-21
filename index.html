@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0">
+    <title>The Cocktail Bar</title>
+
+    <!-- StyleSheet -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,400;0,600;1,600&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+</head>
+<body>
+    <header>
+        <h1>Welcome to The Cocktail Bar</h1>
+
+        <form>
+            <label for="drink-input">
+                What would you like to drink today?
+            </label>
+
+            <input id="drink-input" name="drink" type="text" placeholder="Margarita...">
+            <button id="getDrink" type="button">Search</button>
+        </form>
+    </header>
+
+    <main>
+            <!-- Slider main container -->
+            <div class="swiper mySwiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <p>
+                            <span>Hi, there!</span>
+                            I am <span class="title">Lipkis</span>, your personal bartender
+                        </p>
+
+                        <h2>Welcome to The Cocktail Bar!</h2>
+
+                        <img class="cocktail-img" src="img/cocktail-mix.jpg" alt="">
+
+                        <p class="prev-message">Kindly enter what drink you would like today using the form above.</p>
+                    </div>
+
+                </div>
+
+                <!-- We need pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+    </main>
+    <script type="text/javascript" src="js/main.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 0,
+          depth: 150,
+          modifier: 1.25,
+          slideShadows: true
+        },
+        pagination: {
+          el: ".swiper-pagination"
+        }
+      });
+    </script>
+</body>
+</html>
