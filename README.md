@@ -1,7 +1,7 @@
 # The Cocktail Bar
 This Web Application helps visitor pick a drink during any occassion
 
-**Link to project:** http://thecocktailbar.netlify.app/
+**Link to project:** https://thecocktailbar.netlify.app/
 
 ![alt tag](img/TheCocktailBar.gif)
 
