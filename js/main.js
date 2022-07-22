@@ -31,13 +31,29 @@ function drinkToDOM(drink){
     div.classList.add('swiper-slide');
     div.classList.add('swiper-slide-active');
 
-    // Add content to the created div
-    div.innerHTML = `
-        <h2>${drink.strDrink}</h2>
-        <img class="cocktail-img" src="${drink.strDrinkThumb}">
-        <h3>How to prepare</h3>
-        <p>${drink.strInstructions}</p>
-    `;
+    // Then create the content with which to populate the div
+    // Create h2 element for the drink title
+    const h2 = document.createElement('h2');
+    h2.textContent = drink.strDrink;
+
+    // Create img element to for the cocktail image
+    const img = document.createElement('img');
+    img.classList.add('cocktail-img');
+    img.src = drink.strDrinkThumb;
+
+    // Create h3 element for the instructions heading
+    const h3 = document.createElement('h3');
+    h3.textContent = 'How to prepare';
+
+    // Create p element for the preparation instructions
+    const p = document.createElement('p');
+    p.textContent = drink.strInstructions;
+
+    // Append all content elements into the div
+    div.appendChild(h2);
+    div.appendChild(img);
+    div.appendChild(h3);
+    div.appendChild(p);
 
     // Append the div and it's contents to the swiperWrapper in the DOM
     const swiperWrapper = document.querySelector('.swiper-wrapper');

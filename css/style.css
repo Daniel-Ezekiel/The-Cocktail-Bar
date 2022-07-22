@@ -81,7 +81,7 @@ button{
 }
 
 main{
-    margin-top: 5.5rem;
+    margin-top: 3.5rem;
     padding-bottom: 5.5rem;
 
     display: flex;
@@ -164,7 +164,7 @@ img + p,
 h3 + p{
     scroll-behavior: smooth;
     scrollbar-width: none;
-    max-height: 125px;
+    height: 10rem;
     overflow-y: scroll;
 
     text-align: justify;

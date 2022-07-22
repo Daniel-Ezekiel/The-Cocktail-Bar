@@ -21,13 +21,15 @@ Within the fetch section in the JS, the body background was set to change on eve
 
 To further improve this app, there isn't any ingredients currently listed as part of the information displayed, so the app can be updated to display the ingredients for each cocktail/drink.  This will assist visitor to be able to make their own drinks from the comfort of their home provided that they have the ingredients.
 
-Further improvements to this Web Application is to redevelop it(populate the slider, the DOM) using best practices instead of innerHTML like I did in this project.
+When I originally completed this project, I proposed to optimize it by using standard practice to populate the DOM instead of using innerHTML. With this new version, I have successfully fulfilled those conditons and the code is now refactored and optimized without using innerHTML.
 
 ## Lessons Learned:
 
 This project helped me learn how to implement plugins like Swiper.js to suit the requirements for the project. It also helped me improve in reading and understanding documentation properly to be able to use tools effectively.
 
 While building the Web Application, I made use of 'innerHTML' to populate the slider during DOM Manipulation. I understand that this isn't the best practice but I used this project to learn about using the innerHTML feature and I can confidently say that I understand it.
+
+This current version has successfully eliminated the use of innerHTML to populate the slider during DOM Manipulation. The code looks better and more understandable and currently, I prefer using this current method of creating a new element and appending to a parent element to carry out DOM Manipulation.
 
 ## Examples:
 Take a look at a few other projects that I have in my own portfolio:
